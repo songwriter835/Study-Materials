@@ -158,3 +158,12 @@ git remote set-url origin 地址 修改远程仓库地址
 git remote remove origin 删除远程仓库
 ```
 
+### 9.撤销操作
+
+```bash
+git reset <file>：取消对某个文件的暂存。
+git reset：取消所有文件的暂存，保留工作区的修改。
+git reset --hard：撤销工作区和暂存区的所有修改，回到最近一次提交的状态。
+git revert <commit-hash>：撤销指定的提交，并生成一个新的提交记录。
+```
+
