@@ -166,4 +166,24 @@ git reset：取消所有文件的暂存，保留工作区的修改。
 git reset --hard：撤销工作区和暂存区的所有修改，回到最近一次提交的状态。
 git revert <commit-hash>：撤销指定的提交，并生成一个新的提交记录。
 ```
+### 10.使用 .gitignore 忽略编译文件
+# Python 编译文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
+# macOS 系统文件
+.DS_Store
+
+# 检查当前 .gitignore 是否生效
+
+```bash
+cat .gitignore
+```
+
+# 检查当前 .gitignore 是否生效
+```bash
+git add .gitignore
+git commit -m "Update gitignore to exclude __pycache__ and .DS_Store"
+```
